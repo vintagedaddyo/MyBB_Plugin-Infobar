@@ -1,0 +1,56 @@
+/*
+ * MyBB: Infobar
+ *
+ * File: infobar.css
+ * 
+ * Authors: Sebastian Wunderlich & Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Plugin Version: 1.5
+ *
+ * 
+ */
+
+#infobar
+{
+	background-color: infobackground;
+	border-bottom: 2px ridge threedlightshadow;
+	color: infotext;
+	cursor: default;
+	left: 0;
+	padding: 2px;
+	position: fixed;
+	text-align: left;
+	top: 0;
+	width: 100%;
+	z-index: 32767;
+}
+
+#infobar:hover
+{
+	background-color: highlight;
+	border-bottom-color: threedshadow;
+	color: highlighttext;
+}
+
+#infobar span
+{
+	background: url('../../../inc/plugins/infobar/lightbulb.png') no-repeat left;
+	padding-left: 22px;
+}
+
+#infobar span a
+{
+	color: infotext;
+	text-decoration: none;
+}
+
+#infobar:hover span a
+{
+	color: highlighttext;
+}
+
+body{
+	margin-top: 35px;
+}
