@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.5
+ * Plugin Version: 1.6
  *
  * 
  */
@@ -49,13 +49,15 @@ function infobar_info()
 
 function infobar_activate()
 {
-	global $db;
+	global $db, $lang;
+
+    $lang->load("infobar");
 	$info=infobar_info();
 	$setting_group_array=array
 	(
 		'name'=>$info['codename'],
 		'title'=>$info['name'],
-		'description'=>'Here you can edit '.$info['name'].' settings.',
+		'description' => ''.$lang->infobar_1.''.$info['name'].''.$lang->infobar_2.'',
 		'disporder'=>1,
 		'isdefault'=>0
 	);
@@ -65,15 +67,15 @@ function infobar_activate()
 	(
 		'infobar_guests'=>array
 		(
-			'Infobar for guests',
-			'Do you want to show an infobar to your guests?',
+			''.$lang->infobar_3.'',
+			''.$lang->infobar_4.'',
 			'yesno',
 			1
 		),
 		'infobar_activate'=>array
 		(
-			'Infobar not activated users',
-			'Do you want to show an infobar to your not activated users?',
+			''.$lang->infobar_5.'',
+			''.$lang->infobar_6.'',
 			'yesno',
 			1
 		)

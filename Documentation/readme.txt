@@ -19,6 +19,17 @@ Updated to version 1.5 for MyBB 1.8.x usage by: Vintagedaddyo
 - Minor code changes
 - Minor directory changes
 
+Updated to version 1.6 for MyBB 1.8.x usage by: Vintagedaddyo
+- Minor code changes
+- Further Localization support:
+
+-english
+-englishgb
+-espanol
+-french
+-italian
+
+
 Compatibility
 MyBB 1.8: Yes 
 
